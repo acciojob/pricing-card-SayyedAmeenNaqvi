@@ -1,16 +1,60 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Pricing Card</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .card {
+    width: 300px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  .card img {
+    width: 100%;
+    height: auto; /* Keep aspect ratio */
+    display: block;
+    margin-bottom: 15px;
+  }
+  .card h1 {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .card p {
+    margin: 5px 0;
+  }
+  .card button {
+    padding: 12px 25px;
+    background-color: #ff6b61;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+  }
+  .card button:hover {
+    background-color: #ff4a3d;
+  }
+</style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Heart-shaped tree" />
+    <h1>Pricing Card</h1>
+    <p>Price: Rs.200</p>
+    <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <button>Buy Now</button>
+  </div>
 </body>
-
 </html>
